@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainColor: #f57224;
+    --whiteColor: #fff;
+    --blackColor: #000;
+    --ligthDarK: #222;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Style de la navigation*/
+
+nav{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 100px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    display: flex;
+    position: fixed;
+    top: 0;
+    background: #fff;
+}
+.left{
+    width: 50%;
+    text-align: left;
+}
+
+.left a{
+    font-weight: bold;
+    color: var(--mainColor);
+    font-size: 21px;
+}
+.right{
+    width: 50%;
+    text-align: right;
+}
+nav ul{
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+}
+.shoppingCart i{
+    font-size: 20px;
+    display: inline-block;
+    color: var(--ligthDarK);
+    margin-right: 15px;
+}
+.cartCount{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: var(--mainColor);
+    color: var(--whiteColor);
+    border-radius: 50px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 12px;
+}
+/*Helpers*/
+.container{
+    width: 100%;
+    padding: 0 100px;
+}
+/*Style du fond d'ecran */
+
+header{
+    width: 100%;
+    background: url(../assets/background.jpg);
+    height: 500px;
+    margin-top: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    color: var(--whiteColor);
+}
+.headerText{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerText h1{
+    font-size: 35px;
+}
+.headerText p{
+    margin-top: 7px;
+}
+
+/*Style des produits*/
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.product{
+    width: 25%;
+    padding: 0 12px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.product-image{
+    width: 100%;
+    height: 200px;
+}
+
+.product-image img{
+    width: 100%;
+    height: 200px;
+}
+.product-detail{
+    padding: 15px 10px;
+    text-align: center;
+    background: var(--whiteColor);
+    border-left: 1px solid #fafafa;
+    border-right: 1px solid #fafafa;
+}
+.product-name{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+.product-price{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 12px 0;
+}
+.add-to-cart{
+    background: var(--mainColor);
+}
