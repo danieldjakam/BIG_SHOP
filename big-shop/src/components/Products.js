@@ -23,6 +23,8 @@ const Products = () => {
                         <div className="add-to-cart">
                             Ajouter au panier
                         </div>
+                        {product.status === 'hot' ? <div className="hot">Hot</div> : ''}
+                        {product.status === 'new' ? <div className="new">New</div> : ''}
                     </div>
                 ))}
         </div>

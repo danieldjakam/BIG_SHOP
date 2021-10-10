@@ -25,6 +25,7 @@ nav{
     position: fixed;
     top: 0;
     background: #fff;
+    z-index: 9999;
 }
 .left{
     width: 50%;
@@ -108,6 +109,21 @@ header{
     padding: 0 12px;
     margin: 20px 0;
     overflow: hidden;
+    position: relative;
+}
+.hot{
+    position: absolute;
+    top: 0;
+    background: orangered;
+    padding: 5px 12px;
+    color: var(--whiteColor);
+}
+.new{
+    position: absolute;
+    top: 0;
+    background: greenyellow;
+    padding: 5px 12px;
+    color: var(--whiteColor);
 }
 .product-image{
     width: 100%;
@@ -137,4 +153,10 @@ header{
 }
 .add-to-cart{
     background: var(--mainColor);
+    padding: 10px 20px;
+    width: 100%;
+    color: var(--whiteColor);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
 }

@@ -25,7 +25,7 @@ const ProductscontextProvider = (props) => {
         {id: 7 , name: "Jeu Daniel Djakam", price: 500, image: seven, status: 'new'},
         {id: 8 , name: "Iphone 4s Screenshot", price: 30, image: height, status: 'hot'},
         {id: 9 , name: "Autre icône de big shop", price: 400, image: nine, status: 'new'},
-        {id: 10 , name: "Daniel dans le modele de kakashi", price: 100, image: ten, status: 'hot'},
+        {id: 10 , name: "Daniel en kakashi", price: 100, image: ten, status: 'hot'},
         {id: 11 , name: "Produits de femme", price: 60, image: eleven, status: 'hot'},
         {id: 12 , name: "Sac à main", price: 45, image: twelve, status: 'new'},
     ])
