@@ -18,26 +18,71 @@ const Cart = () => {
                         <span className="cart-product-price">
                             ${cart.price}.00
                         </span>
-                        <span className="inc">
+                        <span className="inc"
+                        onClick={() => dispatch({
+                                type: 'INC',
+                                id: cart.id,
+                                cart
+                        })}>
                             <i className="fa fa-plus"></i>
                         </span>
                         <span className="product-quantity">
                             {cart.qty}
                         </span>
-                        <span className="inc">
+                        <span className="dec"
+                        onClick={() => dispatch({
+                                type: 'DEC',
+                                id: cart.id,
+                                cart
+                        })}>
                             <i className="fa fa-minus"></i>
                         </span>
                         <span className="product-total-price">
-                            $500.00
+                            ${cart.price * cart.qty}.00
                         </span>
-                        <span className="delete-product">
+                        <span className="delete-product"
+                        onClick={() => dispatch({
+                                type: 'DELETE',
+                                id: cart.id,
+                                cart
+                        })}>
                             <i className="fa fa-trash"></i>
                         </span>
                      </div>
                  )
                  )
-                 : 'Votre panier est actuellement vide'}
+                 : <h3 align="center">Votre panier est actuellement vide </h3>}
             </div>
+            {
+                shoppingCart.length > 0 
+                    ?
+                        <div className="cart-summary">
+                            <div className="summary">
+                                <h3>Somme du chariot</h3>
+                                <div className="total-items">
+                                    <div className="items">
+                                        Produits
+                                    </div>
+                                    <div className="items-count">
+                                        {qty}
+                                    </div>
+                                </div>
+                                <div className="total-price-section">
+                                    <div className="just-title">
+                                        Prix total
+                                    </div>
+                                    <div className="items-price">
+                                        ${totalPrice}.00
+                                    </div>
+                                </div>
+                                <div className="stripe-section">
+                                    {/*stripe button */}
+                                </div>
+                            </div>
+                        </div>
+                    : ''
+
+            }
         </div>
     );
 };

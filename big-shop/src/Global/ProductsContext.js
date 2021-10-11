@@ -23,13 +23,13 @@ const ProductscontextProvider = (props) => {
         {id: 3 , name: "Tennis", price: 100, image: tennis, status: 'hot'},
         {id: 4 , name: "Vêtement pour homme", price: 300, image: vetements_homme, status: 'hot'},
         {id: 5 , name: "Produits de femme", price: 60, image: produits_femme, status: 'hot'},
-        {id: 6 , name: "Sac à main", price: 45, image: sacs, status: 'hot'},
+        {id: 6 , name: "Sac à main", price: 7, image: sacs, status: 'hot'},
         
         {id: 7 , name: "Air Pods", price: 200, image: air_pods, status: 'new'},
         {id: 8 , name: "I-mac", price: 200, image: i_mac, status: 'hot'},
         {id: 9 , name: "Iphone avec air pods", price: 1400, image: iphone_air_pods, status: 'new'},
-        {id: 10 , name: "Iphone", price: 1200, image: iphone, status: 'new'},
-        {id: 11 , name: "Mac Book Pro", price: 1600, image: mac_book_pro, status: 'new'},
+        {id: 10 , name: "Mac Book Pro", price: 1200, image: iphone, status: 'hot'},
+        {id: 11 , name: "Mac Book Pro Air", price: 2000, image: mac_book_pro, status: 'new'},
         {id: 12 , name: "Samsung Galaxy s21", price: 1000, image: samsung_galaxy_s21, status: 'new'},
     ])
     return (

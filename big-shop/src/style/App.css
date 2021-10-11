@@ -160,6 +160,7 @@ header{
     text-transform: uppercase;
     text-align: center;
     font-size: 14px;
+    cursor: pointer;
 }
 .not-found{
     margin-top: 100px;
@@ -252,4 +253,48 @@ header{
     display: inline-block;
     color: rgb(187, 58, 58);
     cursor: pointer;
+}
+/*Style de la section des prix total*/
+.cart-summary{
+    width: 25%;
+    padding: 0 0 0 20px;
+}
+.summary{
+    background: var(--whiteColor);
+    padding: 13px;
+}
+.summary h3{
+    font-size: 18px;
+    font-weight: normal;
+    border-bottom: 1px solid #999;
+    padding-bottom: 8px;
+}
+.total-items{
+    display: flex;
+    margin: 15px 0;
+}
+.items{
+    width: 50%;
+    font-weight: normal;
+    text-align: left;
+}
+.items-count{
+    width: 50px;
+    text-align: right;
+    color: var(--mainColor);
+}
+.total-price-section{
+    display: flex;
+    margin: 15px 0;
+}
+.just-title{
+    width: 50%;
+    text-align: left;
+    font-weight: normal;
+}
+.items-price{
+    width: 50%;
+    text-align: right;
+    font-weight: bold;
+    color: var(--mainColor);
 }
