@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import StripeCheckout from 'react-stripe-checkout';
 import { CartContext } from '../Global/CartContext';
 const Cart = () => {
     const {shoppingCart, totalPrice, qty, dispatch} = useContext(CartContext)
@@ -76,7 +77,9 @@ const Cart = () => {
                                     </div>
                                 </div>
                                 <div className="stripe-section">
-                                    {/*stripe button */}
+                                    <StripeCheckout>
+                                        
+                                    </StripeCheckout>
                                 </div>
                             </div>
                         </div>
