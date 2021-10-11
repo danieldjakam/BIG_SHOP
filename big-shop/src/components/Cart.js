@@ -3,6 +3,9 @@ import StripeCheckout from 'react-stripe-checkout';
 import { CartContext } from '../Global/CartContext';
 const Cart = () => {
     const {shoppingCart, totalPrice, qty, dispatch} = useContext(CartContext)
+    const handleToken = (token) =>{
+
+    }
 
     return (
         <div className="cart-container">
@@ -77,8 +80,14 @@ const Cart = () => {
                                     </div>
                                 </div>
                                 <div className="stripe-section">
-                                    <StripeCheckout>
-                                        
+                                    <StripeCheckout
+                                    stripeKey="pk_test_HnF0cQhq9UGw2GvWRltNiAQM00kn9HlRCg"
+                                    token={handleToken}
+                                    billingAddress
+                                    shippingAddress
+                                    amount={totalPrice*100}
+                                    name="Total des produits">
+
                                     </StripeCheckout>
                                 </div>
                             </div>
